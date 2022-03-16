@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  color: #550101;
+}
+header {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "logo nav nav"
+    "h1 h1 h1";
+}
+.logo {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  grid-area: logo;
+}
+nav {
+  padding: 0rem;
+  border: 0.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  grid-area: nav;
+}
+nav ul {
+  list-style: none;
+  background-color: #550101;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem;
+  display: block;
+}
+nav ul a:hover {
+  background-color: whitesmoke;
+  color: #550101;
+  font-weight: bold;
+}
+h1 {
+  font-family: "Oswald", sans-serif;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: h1;
+}
+.flecha {
+  position: fixed;
+  right: 0%;
+  bottom: 0%;
+  opacity: 50%;
+  z-index: 5;
+}
+.flecha:hover {
+  opacity: 100%;
+}
+.inicio1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-template-areas:
+    "incicio inicio inicio inicio inicio"
+    "imagen1 imagen2 imagen3 imagen4 imagen5"
+    "frase frase frase frase frase";
+}
+.inicio1 h2 {
+  font-family: "Oswald", sans-serif;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: left;
+  grid-area: inicio;
+}
+.imagen1,
+.imagen2,
+.imagen3,
+.imagen4,
+.imagen5 {
+  margin: 0.2rem;
+  padding: 0.2rem;
+  opacity: 80%;
+}
+.imagen1 {
+  z-index: 1;
+  grid-area: imagen1;
+}
+.imagen1:hover {
+  opacity: 100%;
+  transition: all 2s ease;
+  transform: scale(1.5, 1.5);
+}
+.imagen2 {
+  grid-area: imagen2;
+  z-index: 2;
+}
+.imagen2:hover {
+  opacity: 100%;
+  transition: all 2s ease;
+  transform: scale(1.5, 1.5);
+}
+.imagen3 {
+  grid-area: imagen3;
+  z-index: 3;
+}
+.imagen3:hover {
+  opacity: 100%;
+  transition: all 2s ease;
+  transform: scale(1.5, 1.5);
+}
+.imagen4 {
+  grid-area: imagen4;
+  z-index: 4;
+}
+.imagen4:hover {
+  opacity: 100%;
+  transition: all 2s ease;
+  transform: scale(1.5, 1.5);
+}
+.imagen5 {
+  grid-area: imagen5;
+  z-index: 5;
+}
+.imagen5:hover {
+  opacity: 100%;
+  transition: all 2s ease;
+  transform: scale(1.5, 1.5);
+}
+.inicio1 .frase {
+  font-family: "Oswald", sans-serif;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: frase;
+  z-index: 6;
+}
+a {
+  color: #550101;
+}
+
+.productos {
+  padding: 0.5rem;
+  border: 0.5rem;
+  width: 95%;
+  /*background-image: url(./MULTIMEDIA/imagen\ 8.jpg);*/
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "prodyserv prodyserv prodyserv prodyserv"
+    "product imagen6 imagen7 imagen8"
+    "servicios imagen9 imagen10 imagen11 "
+    "asesoria  imagen12 imagen13 imagen14";
+}
+.prodyserv h2 {
+  font-family: "Oswald", sans-serif;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: left;
+  grid-area: prodyserv;
+}
+.product {
+  grid-area: product;
+}
+.servicios {
+  grid-area: servicios;
+}
+.asesoria {
+  grid-area: asesoria;
+}
+.imagen6,
+.imagen7,
+.imagen8,
+.imagen9,
+.imagen10,
+.imagen11,
+.imagen12,
+.imagen13,
+.imagen14 {
+  margin: 2rem auto;
+  padding: 0.2rem;
+}
+.imagen6 {
+  grid-area: imagen6;
+}
+.imagen7 {
+  grid-area: imagen7;
+}
+.imagen8 {
+  grid-area: imagen8;
+}
+.imagen9 {
+  grid-area: imagen9;
+}
+.imagen10 {
+  grid-area: imagen10;
+}
+.imagen11 {
+  grid-area: imagen11;
+}
+.imagen12 {
+  grid-area: imagen12;
+}
+.imagen13 {
+  grid-area: imagen13;
+}
+.imagen14 {
+  grid-area: imagen14;
+}
+
+.nosotros {
+  padding: 0.5rem;
+  border: 0.5rem;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "nosotros nosotros"
+    "historia historia"
+    "mision mision "
+    "vision vision";
+}
+.nosotros h2 {
+  grid-area: nosotros;
+  font-family: "Oswald", sans-serif;
+  font-size: x-large;
+}
+
+.nosotros p {
+  font-family: "Oswald", sans-serif;
+}
+.historia {
+  grid-area: historia;
+}
+.mision {
+  grid-area: mision;
+}
+.vision {
+  grid-area: vision;
+}
+
+.contacto {
+  margin: auto;
+  padding: 10px;
+}
+.contacto .redes {
+  position: relative;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+footer {
+  display: flex;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background: #550101;
+  color: white;
+  justify-content: center;
+}
+footer div {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-family: "Oswald", sans-serif;
+  align-items: center;
+  flex-direction: column;
+}
+fieldset {
+  border: solid;
+  color: white;
+  background-color: #550101;
+  border-radius: 2%;
+  display: flex;
+}
+fieldset div {
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+legend {
+  margin: 0.2rem;
+  padding: 0.2rem;
+  color: white;
+  background-color: #550101;
+}
+.boton {
+  margin: 0.2rem;
+  padding: 0.2rem;
+  justify-content: flex-start;
+}
+.boton:hover {
+  background-color: rgb(37, 36, 33);
+  color: #ffffff;
+  font-weight: bold;
+}
+.video1 {
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    grid-template-areas:
+      "logo nav nav"
+      "h1 h1 h1";
+  }
+  .inicio1 {
+    grid-template-areas:
+      "incicio inicio inicio"
+      "imagen1 imagen2 imagen3"
+      "imagen4 imagen5 imagen5"
+      "frase frase frase";
+  }
+  .productos {
+    grid-template-areas:
+      "prodyserv prodyserv"
+      "product imagen6 imagen7 imagen8"
+      "servicios imagen9 imagen10 imagen11"
+      "asesoría imagen12 imagen13 imagen14";
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas:
+      "logo nav"
+      "h1 h1";
+  }
+  .inicio1 {
+    grid-template-areas:
+      "incicio inicio"
+      "imagen1 imagen2"
+      "imagen3 imagen4"
+      "imagen5 imagen5"
+      "frase frase";
+  }
+  .productos {
+    grid-template-areas:
+      "prodyserv prodyserv"
+      "product imagen6 imagen7"
+      "product imagen8 imagen8"
+      "servicios imagen9 imagen10"
+      "servicios imagen11 imagen11"
+      "asesoría imagen12 imagen13"
+      "asesoria imagen14 imagen14";
+  }
+}
