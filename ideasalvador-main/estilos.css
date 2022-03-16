@@ -200,29 +200,65 @@ a {
 .imagen6 {
   grid-area: imagen6;
 }
+.imagen6:hover {
+  transition: all 2s ease;
+  transform: scale(2, 2);
+}
 .imagen7 {
   grid-area: imagen7;
+}
+.imagen7:hover {
+  transition: all 2s ease;
+  transform: scale(2, 2);
 }
 .imagen8 {
   grid-area: imagen8;
 }
+.imagen8:hover {
+  transition: all 2s ease;
+  transform: scale(2, 2);
+}
 .imagen9 {
   grid-area: imagen9;
+}
+.imagen9:hover {
+  transition: all 2s ease;
+  transform: scale(2, 2);
 }
 .imagen10 {
   grid-area: imagen10;
 }
+.imagen10:hover {
+  transition: all 2s ease;
+  transform: scale(2, 2);
+}
 .imagen11 {
   grid-area: imagen11;
+}
+.imagen11:hover {
+  transition: all 2s ease;
+  transform: scale(2, 2);
 }
 .imagen12 {
   grid-area: imagen12;
 }
+.imagen12:hover {
+  transition: all 2s ease;
+  transform: scale(2, 2);
+}
 .imagen13 {
   grid-area: imagen13;
 }
+.imagen13:hover {
+  transition: all 2s ease;
+  transform: scale(2, 2);
+}
 .imagen14 {
   grid-area: imagen14;
+}
+.imagen14:hover {
+  transition: all 2s ease;
+  transform: scale(2, 2);
 }
 
 .nosotros {
