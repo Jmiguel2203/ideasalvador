@@ -8,44 +8,91 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="./MULTIMEDIA/favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="estilos.css">
     <title>TIRE SOURCING</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img id="arriba" src="./MULTIMEDIA/logo tiresourcing.png" alt="logo" width="200">
+    <header class="container">
+        <div class="row">
+            <div class="col-xs-12 xol-md-12 col-lg-12 mt-3 margin">
+                <img id="arriba" src="./MULTIMEDIA/logo tiresourcing.png" alt="logo" width="200">
+            </div>
         </div>    
         <nav>
-            <div>    
-                <ul>
-                    <li><a href="index.html"><strong>Inicio</strong></a></li>
-                    <li><a href="productos.html">Productos y servicios</a></li>
-                    <li><a href="multimedia.html">Multimedia</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="contacto.html">Contácto</a></li>
-                </ul>
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-12 align-content-end"> 
+                    <ul class="nav justify-content-end">                     
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html"><strong>Inicio</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos y servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="multimedia.html">Multimedia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contácto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <h1><em>LLANTAS MOVIENDO TU NEGOCIO</em></h1>
+        <div class="row">
+            <div class="col-xs-12 col-md-12 col-lg-12 text-center">
+                    <p><em><h1>LLANTAS MOVIENDO TU NEGOCIO</h1></em></p>
+            </div>
+        </div>
     </header>
     <br>
-    <main>
+    <main class="container">
         <div class="flecha">
             <a href="#arriba"><img src="./MULTIMEDIA/flecha arriba.png" width="50px" alt=""></a>
         </div>
-        <section class="inicio1"> 
-            <div>
-                <h2 id="inicio">Inicio</h2>
+        <section class="carrusel"> 
+            <div class="row">
+                <div class="col-12 margin">
+                    <h2 id="inicio">Inicio</h2>
+                </div>
             </div>
-                <img class="imagen1" src="./MULTIMEDIA/imagen 1.PNG" alt="" width="250" height="120">
-                <img class="imagen2"  src="./MULTIMEDIA/imagen 2.PNG" alt="" width="250" height="120">
-                <img class="imagen3"  src="./MULTIMEDIA/imagen 3.PNG" alt="" width="250" height="120">
-                <img class="imagen4"  src="./MULTIMEDIA/imagen 4.PNG" alt="" width="250" height="120">
-                <img class="imagen5"  src="./MULTIMEDIA/imagen 5.PNG" alt="" width="250" height="120">
-            <div class="frase">
-                <h3>Extiende el tiempo de vida útil de tus llantas con un servicio de renovado eficiente y contribuye a la preservación del medio ambiente </h3>
-                <br>
+            <div class="row">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade mx-auto" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./MULTIMEDIA/imagen 1.PNG" class="d-block w-75 m-auto" alt="imagen1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./MULTIMEDIA/imagen 2.PNG" class="d-block w-75 m-auto" alt="imagen2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./MULTIMEDIA/imagen 3.PNG" class="d-block w-75 m-auto" alt="imagen3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./MULTIMEDIA/imagen 4.PNG" class="d-block w-75 m-auto" alt="imagen4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./MULTIMEDIA/imagen 5.PNG" class="d-block w-75 m-auto" alt="imagen5">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev m-auto" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next m-auto" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>                          
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md col-lg-12 text-center">
+                    <p><h3>Extiende el tiempo de vida útil de tus llantas con un servicio de renovado eficiente y contribuye a la preservación del medio ambiente </h3></p>
+                    <br>
+                </div>
             </div>
         </section>
         <br>
@@ -121,5 +168,7 @@
             <p>correo@gmail.com</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

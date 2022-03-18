@@ -6,29 +6,24 @@
 body {
   background-color: white;
   color: #550101;
+  font-family: "Oswald", sans-serif;
 }
+.carrusel {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+/*
 header {
   background-color: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "logo nav nav"
-    "h1 h1 h1";
-}
-.logo {
-  margin: 0.5rem;
-  padding: 0.5rem;
-  grid-area: logo;
+  font-family: "Oswald", sans-serif;
+  color: #550101;
 }
 nav {
   padding: 0rem;
   border: 0.5rem;
   text-align: center;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  grid-area: nav;
+  font-family: "Oswald", sans-serif;
+  color: white;
 }
 nav ul {
   list-style: none;
@@ -60,6 +55,7 @@ h1 {
   align-items: center;
   grid-area: h1;
 }
+
 .flecha {
   position: fixed;
   right: 0%;
@@ -70,6 +66,7 @@ h1 {
 .flecha:hover {
   opacity: 100%;
 }
+/*
 .inicio1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -154,12 +151,13 @@ h1 {
 a {
   color: #550101;
 }
-
+*/
+/*
 .productos {
   padding: 0.5rem;
   border: 0.5rem;
   width: 95%;
-  /*background-image: url(./MULTIMEDIA/imagen\ 8.jpg);*/
+  background-image: url(./MULTIMEDIA/imagen\ 8.jpg);
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -169,6 +167,7 @@ a {
     "servicios imagen9 imagen10 imagen11 "
     "asesoria  imagen12 imagen13 imagen14";
 }
+
 .prodyserv h2 {
   font-family: "Oswald", sans-serif;
   margin: 20px auto;
@@ -351,7 +350,8 @@ legend {
 .video1 {
   justify-content: center;
 }
-
+*/
+/*
 @media screen and (max-width: 1024px) {
   header {
     grid-template-areas:
@@ -401,3 +401,4 @@ legend {
       "asesoria imagen14 imagen14";
   }
 }
+*/
